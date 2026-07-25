@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Contact &amp; Book a Call — Romexx Growth Partner</title>
+  <meta name="description" content="Book a call with Romexx, the growth partner that scales brands and companies with marketing, websites, and systems built on aligned incentives.">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"><link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="preloader"><div class="pl-x"><span class="pl-ring"></span><span class="pl-ring two"></span><img class="pl-mark" src="assets/logo-x.png" alt="Romexx"></div></div>
+
+<!-- ===== NAV ===== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img class="brand-x" src="assets/logo-x.png" alt="">ROMEXX</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="story.html">Story</a>
+        <a href="work.html">Work</a>
+        <a href="results.html">Results</a>
+        <a href="contact.html" class="btn nav-cta active">Book a call <span class="arw">↗</span></a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="section" style="padding-bottom:0">
+    <div class="wrap">
+      <span class="eyebrow reveal">Book a call</span>
+      <h1 class="display reveal d1" style="margin-top:16px">Let's talk.</h1>
+      <p class="lead maxw-60 reveal d2 mt-m">Tell me about your business. You'll get a straight, 20-minute conversation about what's holding your growth back — and exactly how I'd fix it. No pitch, no pressure.</p>
+    </div>
+  </section>
+
+  <!-- ===== MAIN ===== -->
+  <section class="section">
+    <div class="wrap two-col" style="align-items:start">
+
+      <!-- Left: what to expect + direct contact -->
+      <div class="reveal">
+        <div class="two-col" style="grid-template-columns:auto 1fr;gap:20px;align-items:center">
+          <div class="hero-photo" style="width:96px;height:96px;aspect-ratio:1/1;border-radius:50%;flex:none"><img src="assets/headshot.jpg" alt="Roman Toilolo"></div>
+          <div><div class="nm" style="font-family:var(--display);font-weight:600;font-size:1.2rem">Roman Toilolo</div><div class="muted">Founder, Romexx · Los Angeles</div></div>
+        </div>
+
+        <h2 class="h-md mt-l">What you'll get on the call</h2>
+        <ul class="checklist mt-m">
+          <li><span class="ck">✓</span> An honest look at why your business isn't growing faster</li>
+          <li><span class="ck">✓</span> The one or two fixes I'd make first — and why</li>
+          <li><span class="ck">✓</span> Straight math: projected leads, cost per lead, and ROAS</li>
+          <li><span class="ck">✓</span> A clear next step, even if it's not working with me</li>
+        </ul>
+
+        <hr class="divider mt-l">
+
+        <div class="mt-l">
+          <h2 class="h-md">Reach me directly</h2>
+          <p class="mt-s"><span class="muted">Email</span><br><a class="link-underline" href="mailto:romexxlab@gmail.com">romexxlab@gmail.com</a></p>
+          <p class="mt-s"><span class="muted">Call or text</span><br><a class="link-underline" href="tel:+19092787183">(909) 278-7183</a></p>
+          <p class="mt-s"><span class="muted">Grab a time instantly</span><br><a class="btn btn-dark mt-s" href="https://calendly.com/owner-romexx/30min">Book the Growth Strategy Call <span class="arw">↗</span></a></p>
+          <p class="form-note mt-s">Based in Los Angeles · working with service businesses anywhere.</p>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="card reveal d1">
+        <h2 class="h-md">Send me your business</h2>
+        <p class="muted mt-s">Fill this out and I'll get back to you within 24 hours.</p>
+        <form class="form mt-m" action="https://formspree.io/f/xojgkwee" method="POST" data-formspree>
+          <input type="hidden" name="_subject" value="New lead from the Romexx website">
+          <div class="row">
+            <div class="field"><label>First name <span class="req">*</span></label><input type="text" name="first" required></div>
+            <div class="field"><label>Last name</label><input type="text" name="last"></div>
+          </div>
+          <div class="row">
+            <div class="field"><label>Email <span class="req">*</span></label><input type="email" name="email" required></div>
+            <div class="field"><label>Phone</label><input type="tel" name="phone"></div>
+          </div>
+          <div class="field"><label>Business name</label><input type="text" name="business"></div>
+          <div class="field">
+            <label>What do you need fixed?</label>
+            <select name="service">
+              <option value="">Select…</option>
+              <option>Get seen — ads (Meta / Google)</option>
+              <option>Get booked — website / funnel</option>
+              <option>Get systems — CRM / follow-up</option>
+              <option>The full growth fix</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field"><label>Tell me about your business</label><textarea name="message" placeholder="What you do, where you're at, and what you want more of…"></textarea></div>
+          <button type="submit" class="btn btn-lg" data-label="Send it to Roman" style="justify-content:center">Send it to Roman</button>
+          <p class="form-note">No spam, ever. I read every message myself and reply within 24 hours.</p>
+          <p class="form-success" style="display:none;color:#16a34a;font-family:var(--display);font-weight:600">Got it — I'll be in touch within 24 hours. ✓</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="big">ROMEXX</div>
+          <p class="muted maxw-60 mt-s">I fix growth for service businesses — more clients, more revenue, less guesswork.</p>
+          <a href="contact.html" class="btn mt-m">Book a call <span class="arw">↗</span></a>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><a href="index.html">Home</a><a href="story.html">Story</a><a href="work.html">Work</a><a href="results.html">Results</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Contact</h4><a href="mailto:romexxlab@gmail.com">romexxlab@gmail.com</a><a href="tel:+19092787183">(909) 278-7183</a><a href="https://calendly.com/owner-romexx/30min">Book a call ↗</a><span style="display:block;padding:7px 0;color:#8a8a92">Los Angeles, CA</span></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Romexx · Roman Toilolo. Los Angeles · Building daily.</span>
+        <span>I fix growth for service businesses.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

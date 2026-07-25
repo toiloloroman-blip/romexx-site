@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="STORY PHOTO">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16161A"/>
+      <stop offset="1" stop-color="#0B0B0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <g fill="#2b2b31">
+    <circle cx="400" cy="380" r="136"/>
+    <path d="M160 1000 C160 620 280 580 400 580 C520 580 640 620 640 1000 Z"/>
+  </g>
+  <rect x="18" y="18" width="46" height="46" fill="none" stroke="#FF4A1C" stroke-width="3"/>
+  <rect x="736" y="936" width="46" height="46" fill="none" stroke="#FF4A1C" stroke-width="3"/>
+  <text x="50%" y="800" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="40" font-weight="700" fill="#F3F0E9" letter-spacing="1">STORY PHOTO</text>
+  <text x="50%" y="860" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="24" fill="#FF4A1C" letter-spacing="2">REPLACE WITH REAL PHOTO</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-label="PHOTO">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16161A"/>
+      <stop offset="1" stop-color="#0B0B0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="700" fill="url(#g)"/>
+  <g fill="#2b2b31">
+    <circle cx="500" cy="266" r="170"/>
+    <path d="M200 700 C200 434 350 406 500 406 C650 406 800 434 800 700 Z"/>
+  </g>
+  <rect x="18" y="18" width="46" height="46" fill="none" stroke="#FF4A1C" stroke-width="3"/>
+  <rect x="936" y="636" width="46" height="46" fill="none" stroke="#FF4A1C" stroke-width="3"/>
+  <text x="50%" y="560" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="50" font-weight="700" fill="#F3F0E9" letter-spacing="1">PHOTO</text>
+  <text x="50%" y="602" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="30" fill="#FF4A1C" letter-spacing="2">REPLACE WITH REAL PHOTO</text>
+</svg>

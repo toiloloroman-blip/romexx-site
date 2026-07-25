@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <rect width="600" height="450" fill="#0B0B0C"/>
+  <rect x="0" y="0" width="600" height="58" fill="#16161A"/>
+  <circle cx="26" cy="29" r="6" fill="#FF4A1C"/><circle cx="46" cy="29" r="6" fill="#3a3a42"/><circle cx="66" cy="29" r="6" fill="#3a3a42"/>
+  <text x="110" y="35" font-family="'Space Grotesk',sans-serif" font-size="17" font-weight="600" fill="#F3F0E9">Private Security · Inbound Funnel</text>
+  <text x="34" y="158" font-family="'Space Grotesk',sans-serif" font-size="74" font-weight="700" fill="#D8FF3E">12.7×</text>
+  <text x="36" y="196" font-family="'Space Grotesk',sans-serif" font-size="17" fill="#8a8a92">META + GOOGLE · 90 days</text>
+  <g fill="#26262c"><rect x="34" y="238" width="120" height="150" rx="6"/><rect x="174" y="278" width="120" height="110" rx="6"/><rect x="314" y="214" width="120" height="174" rx="6"/><rect x="454" y="252" width="120" height="136" rx="6"/></g>
+  <rect x="314" y="214" width="120" height="174" rx="6" fill="#FF4A1C" opacity="0.9"/>
+  <polyline points="94,340 234,300 374,250 514,210" fill="none" stroke="#D8FF3E" stroke-width="3"/>
+</svg>
