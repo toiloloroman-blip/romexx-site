@@ -318,13 +318,14 @@ mark { background: linear-gradient(180deg, transparent 55%, var(--volt) 55%); co
 .cta-band h2 { position: relative; }
 
 /* ---------- Forms ---------- */
-.form { display: grid; gap: 18px; }
-.form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.field { display: grid; gap: 8px; }
+.form { display: grid; gap: 18px; min-width: 0; }
+.form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; min-width: 0; }
+.field { display: grid; gap: 8px; min-width: 0; }
+.two-col > * { min-width: 0; }
 .field label { font-family: var(--display); font-size: .82rem; font-weight: 600; letter-spacing: .04em; }
 .field .req { color: var(--accent); }
 .field input, .field select, .field textarea {
-  font: inherit; padding: 14px 16px; border-radius: 14px;
+  font: inherit; width: 100%; min-width: 0; max-width: 100%; padding: 14px 16px; border-radius: 14px;
   border: 1.5px solid var(--line); background: var(--paper); color: var(--ink);
   transition: border-color .2s, box-shadow .2s;
 }
