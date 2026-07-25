@@ -34,7 +34,7 @@
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; color-scheme: light; }
 body {
   font-family: var(--body);
   background: var(--cream);
@@ -149,6 +149,7 @@ mark { background: linear-gradient(180deg, transparent 55%, var(--volt) 55%); co
 }
 .nav-links a:hover { background: rgba(11,11,12,.06); }
 .nav-links a.active { color: var(--accent); }
+.nav-links a.btn.active, .nav-links a.nav-cta.active { color: #fff; }
 .nav-cta { margin-left: 8px; }
 .nav-toggle { display: none; width: 44px; height: 44px; border-radius: 12px; position: relative; }
 .nav-toggle span { position: absolute; left: 11px; right: 11px; height: 2px; background: var(--ink); transition: transform .3s var(--ease), opacity .2s; }
@@ -331,6 +332,8 @@ mark { background: linear-gradient(180deg, transparent 55%, var(--volt) 55%); co
 }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(255,74,28,.12); }
 .field textarea { resize: vertical; min-height: 120px; }
+.field select { color-scheme: light; cursor: pointer; }
+.field select option { background: #ffffff; color: #0b0b0c; }
 .form-note { font-size: .85rem; color: var(--muted); }
 @media (max-width: 620px){ .form .row { grid-template-columns: 1fr; } }
 
