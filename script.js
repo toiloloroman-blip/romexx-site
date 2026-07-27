@@ -6,19 +6,23 @@
   const toggle = document.querySelector(".nav-toggle");
   const links = document.querySelector(".nav-links");
   if (toggle && links) {
-    toggle.addEventListener("click", () => {
-      const open = links.classList.toggle("open");
+    const scrim = document.createElement("div");
+    scrim.className = "nav-scrim";
+    document.body.appendChild(scrim);
+
+    const setMenu = (open) => {
+      links.classList.toggle("open", open);
       toggle.classList.toggle("open", open);
+      scrim.classList.toggle("on", open);
       toggle.setAttribute("aria-expanded", open);
       document.body.style.overflow = open ? "hidden" : "";
-    });
-    links.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => {
-        links.classList.remove("open");
-        toggle.classList.remove("open");
-        document.body.style.overflow = "";
-      })
-    );
+    };
+
+    toggle.addEventListener("click", () => setMenu(!links.classList.contains("open")));
+    scrim.addEventListener("click", () => setMenu(false));
+    links.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
+    window.addEventListener("resize", () => { if (window.innerWidth > 860) setMenu(false); });
   }
 
   /* ---- Nav shadow on scroll ---- */
