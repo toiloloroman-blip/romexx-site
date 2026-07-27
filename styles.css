@@ -76,12 +76,13 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; line-height: 1.0
 .muted { color: var(--muted); }
 .accent-text { color: var(--accent); }
 mark { background: linear-gradient(180deg, transparent 55%, var(--volt) 55%); color: inherit; padding: 0 .05em; }
-/* Full-coverage highlight (hero) — dark text on the volt block so it reads clean */
+/* Hero highlight — orange words on a soft neon block that covers the FULL word height */
 .hero-v .lead mark {
-  background: var(--volt);
-  color: var(--ink);
-  padding: .06em .28em .12em;
-  border-radius: .18em;
+  background: rgba(216,255,62,.92);
+  color: var(--accent);
+  font-weight: 700;
+  padding: .12em .3em .18em;
+  border-radius: .16em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
