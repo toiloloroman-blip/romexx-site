@@ -85,14 +85,20 @@
           <div class="field"><label>Business name</label><input type="text" name="business"></div>
           <div class="field">
             <label>What do you need fixed?</label>
-            <select name="service">
-              <option value="">Select…</option>
-              <option>Get seen — ads (Meta / Google)</option>
-              <option>Get booked — website / funnel</option>
-              <option>Get systems — CRM / follow-up</option>
-              <option>The full growth fix</option>
-              <option>Not sure yet</option>
-            </select>
+            <div class="select" data-select>
+              <button type="button" class="select-btn" aria-haspopup="listbox" aria-expanded="false">
+                <span class="select-val placeholder">Select…</span>
+                <svg class="select-arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <input type="hidden" name="service" value="">
+              <ul class="select-menu" role="listbox">
+                <li role="option" data-value="Get seen — ads (Meta / Google)">Get seen — ads (Meta / Google)</li>
+                <li role="option" data-value="Get booked — website / funnel">Get booked — website / funnel</li>
+                <li role="option" data-value="Get systems — CRM / follow-up">Get systems — CRM / follow-up</li>
+                <li role="option" data-value="The full growth fix">The full growth fix</li>
+                <li role="option" data-value="Not sure yet">Not sure yet</li>
+              </ul>
+            </div>
           </div>
           <div class="field"><label>Tell me about your business</label><textarea name="message" placeholder="What you do, where you're at, and what you want more of…"></textarea></div>
           <button type="submit" class="btn btn-lg" data-label="Send it to Roman" style="justify-content:center">Send it to Roman</button>

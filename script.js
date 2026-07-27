@@ -180,4 +180,45 @@
       }
     });
   });
+
+  /* ---- Custom dropdown (replaces native <select>) ---- */
+  document.querySelectorAll("[data-select]").forEach((sel) => {
+    const btn = sel.querySelector(".select-btn");
+    const valEl = sel.querySelector(".select-val");
+    const input = sel.querySelector('input[type="hidden"]');
+    const opts = Array.from(sel.querySelectorAll('[role="option"]'));
+    if (!btn || !valEl || !input) return;
+
+    const close = () => {
+      sel.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    };
+    const open = () => {
+      // flip upward if there isn't room below
+      const r = btn.getBoundingClientRect();
+      const below = window.innerHeight - r.bottom;
+      sel.classList.toggle("up", below < 300 && r.top > below);
+      sel.classList.add("open");
+      btn.setAttribute("aria-expanded", "true");
+    };
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      sel.classList.contains("open") ? close() : open();
+    });
+
+    opts.forEach((li) => {
+      li.addEventListener("click", () => {
+        opts.forEach((o) => o.setAttribute("aria-selected", "false"));
+        li.setAttribute("aria-selected", "true");
+        valEl.textContent = li.dataset.value;
+        valEl.classList.remove("placeholder");
+        input.value = li.dataset.value;
+        close();
+      });
+    });
+
+    document.addEventListener("click", (e) => { if (!sel.contains(e.target)) close(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  });
 })();
