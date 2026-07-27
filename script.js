@@ -15,13 +15,24 @@
       toggle.classList.toggle("open", open);
       scrim.classList.toggle("on", open);
       toggle.setAttribute("aria-expanded", open);
-      document.body.style.overflow = open ? "hidden" : "";
     };
 
-    toggle.addEventListener("click", () => setMenu(!links.classList.contains("open")));
+    toggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      setMenu(!links.classList.contains("open"));
+    });
     scrim.addEventListener("click", () => setMenu(false));
     links.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
+    document.addEventListener("click", (e) => {
+      if (links.classList.contains("open") && !links.contains(e.target) && !toggle.contains(e.target)) setMenu(false);
+    });
+    // close once the user scrolls the page away
+    let lastY = window.scrollY;
+    window.addEventListener("scroll", () => {
+      if (links.classList.contains("open") && Math.abs(window.scrollY - lastY) > 40) setMenu(false);
+      lastY = window.scrollY;
+    }, { passive: true });
     window.addEventListener("resize", () => { if (window.innerWidth > 860) setMenu(false); });
   }
 
