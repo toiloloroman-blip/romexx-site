@@ -76,6 +76,15 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; line-height: 1.0
 .muted { color: var(--muted); }
 .accent-text { color: var(--accent); }
 mark { background: linear-gradient(180deg, transparent 55%, var(--volt) 55%); color: inherit; padding: 0 .05em; }
+/* Full-coverage highlight (hero) — dark text on the volt block so it reads clean */
+.hero-v .lead mark {
+  background: var(--volt);
+  color: var(--ink);
+  padding: .06em .28em .12em;
+  border-radius: .18em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
 
 /* ---------- Layout helpers ---------- */
 .wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); }
